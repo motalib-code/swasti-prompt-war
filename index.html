@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democracy Guide | Your Election Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Timeline -->
+        <aside class="timeline-container">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <h2>Election Journey</h2>
+            </div>
+            <ul class="timeline" id="timeline">
+                <!-- Populated by JS -->
+            </ul>
+        </aside>
+
+        <!-- Main Content area (Chat / Info) -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Voter Assistant</h1>
+                <p>Interactive guide to understanding the election process.</p>
+            </header>
+            
+            <div class="content-display" id="content-display">
+                <div class="intro-card" style="text-align: center; max-width: 500px; animation: fadeIn 0.5s ease;">
+                    <i class="fa-solid fa-robot" style="font-size: 4rem; color: #3b82f6; margin-bottom: 24px; display: block; text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);"></i>
+                    <h2 style="font-size: 1.8rem; margin-bottom: 16px; color: #f8fafc;">Welcome to your personal Election Assistant!</h2>
+                    <p style="color: #94a3b8; line-height: 1.6; font-size: 1.1rem;">Click on any step in the timeline on the left to learn more, or ask a question in the chat below.</p>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message assistant">
+                        <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div class="bubble">Hi! I'm your Election Assistant. Ask me anything about the election process, voter registration, or key dates!</div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chat-input" placeholder="Type your question here (e.g. 'How do I register?')">
+                    <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
